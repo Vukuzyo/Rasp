@@ -1,12 +1,13 @@
 import telebot
 
-token_API = "7076388063:AAFbcBndtPnfr0wh33UWtRTk5IuQY2LrMG4"
+token_API = "sosi"
 bot = telebot.TeleBot(token_API)
 
 @bot.message_handler(commands = ['start'])
 def start(message):
     #print(message.user_id)
     bot.send_message(message.chat.id, 'привет!')
+
 
 
 
